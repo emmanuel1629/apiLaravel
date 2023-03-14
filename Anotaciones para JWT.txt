@@ -1,0 +1,14 @@
+NOTAS IMPORTANTES PARA AUTENTICACION CON JWT
+Instalar Timon/auth
+
+https://jwt-auth.readthedocs.io/en/develop/laravel-installation/
+
+Registrar el provider.
+
+publicamos el provider;
+php artisan vendor:publish --provider"Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+Generamos llave secreta que serà la validadora de los usuarios
+php artisan jwt:secret
+
+Los middleware espian las peticiones y dan paso sòlo a los usuarios autenticados.
