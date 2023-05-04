@@ -31,6 +31,7 @@ class AuthController extends Controller
 
         //Estatus 201 indica que se creo un usuario
         return response()->json([
+            "mensaje"=>"Usuario creado Correctamente",
             "usuario"=>$usuario,
             "token"=>$token
         ],201);
